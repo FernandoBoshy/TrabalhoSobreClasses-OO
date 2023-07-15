@@ -8,6 +8,13 @@ import Classes.Real;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/*
+
+Trabalho de Programação orientada à objetos
+Nome Fernando Augusto de Oliveira
+RU 3301034
+
+ */
 public class Main {
 
     public static void main(String[] args) {
@@ -22,7 +29,6 @@ public class Main {
         listamoedas.add(dolar);
         listamoedas.add(real);
         listamoedas.add(euro);
-
 
         while (opcao != 5) {
             opcoes();
@@ -41,7 +47,7 @@ public class Main {
                 case (int) 4.0:
                     calcularTotalEmReais(cofrinho, listamoedas);
                     break;
-                case (int)5.0:
+                case (int) 5.0:
                     System.out.println("Saindo do programa...");
                     break;
                 default:
@@ -146,7 +152,7 @@ public class Main {
     }
 
     public static Double retornaDouble(String valor){
-        try{
+        try {
             valor = valor.replace(",",".");
             return Double.parseDouble(valor);
         } catch(NumberFormatException e) {
